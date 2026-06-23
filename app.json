@@ -1,5 +1,9 @@
 {
   "expo": {
+    "scheme": "shelfieapp",
+    "experiments": {
+      "typedRoutes": true
+    },
     "name": "shelfie_app",
     "slug": "shelfie_app",
     "version": "1.0.0",
@@ -19,6 +23,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-asset", "expo-router"]
   }
 }
