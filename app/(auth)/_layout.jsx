@@ -1,10 +1,13 @@
 import { StyleSheet, Text, useColorScheme, View } from "react-native";
-import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import { Stack } from "expo-router";
 
-const RootLayout = () => {
+import GuestOnly from "../../components/auth/GuestOnly";
+import { useUser } from "../../hooks/useUser";
+
+const AuthLayout = () => {
   return (
-    <>
+    <GuestOnly>
       <StatusBar style="auto" />
       <Stack
         screenOptions={{
@@ -12,10 +15,10 @@ const RootLayout = () => {
           animation: "none",
         }}
       />
-    </>
+    </GuestOnly>
   );
 };
 
-export default RootLayout;
+export default AuthLayout;
 
 const styles = StyleSheet.create({});
