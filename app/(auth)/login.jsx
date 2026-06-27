@@ -1,3 +1,5 @@
+import { Link } from "expo-router";
+import { useState } from "react";
 import {
   Keyboard,
   Pressable,
@@ -5,7 +7,6 @@ import {
   Text,
   TouchableWithoutFeedback,
 } from "react-native";
-import { Link } from "expo-router";
 
 import ThemedText from "../../components/ThemedText";
 import Spacer from "../../components/Spacer";
@@ -13,7 +14,6 @@ import ThemedView from "../../components/ThemedView";
 import { Colors } from "../../constants/Colors";
 import ThemedButton from "../../components/ThemedButton";
 import ThemedTextInput from "../../components/ThemedTextInput";
-import { useState } from "react";
 import { useUser } from "../../hooks/useUser";
 
 const Login = () => {
